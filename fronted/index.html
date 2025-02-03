@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Planificador de Tareas</title>
+</head>
+<body>
+    <h1>Planificador de Tareas</h1>
+    <form id="taskForm">
+        <label for="presupuesto">Presupuesto:</label>
+        <input type="number" id="presupuesto" required>
+        <div id="tasks"></div>
+        <button type="button" onclick="agregarTarea()">Agregar Tarea</button>
+        <button type="submit">Planificar</button>
+    </form>
+
+    <div id="resultado">
+        <h2>Planificación de Tareas</h2>
+        <table id="tabla-planificacion">
+            <thead>
+                <tr>
+                    <th>Nombre de la Tarea</th>
+                    <th>Duración (días)</th>
+                    <th>Costo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los resultados serán insertados aquí -->
+            </tbody>
+        </table>
+        <p id="costoTotal"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

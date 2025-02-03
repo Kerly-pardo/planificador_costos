@@ -1,0 +1,84 @@
+/* frontend/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4; /* Color de fondo suave */
+}
+
+h1 {
+    color: #333;
+    text-align: center; /* Centrar el título */
+}
+
+form {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario en la página */
+}
+
+label {
+    display: block; /* Hacer que las etiquetas ocupen toda la línea */
+    margin-bottom: 5px; /* Espaciado inferior */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+input[type="number"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+button {
+    background-color: #28a745; /* Color verde para los botones */
+    color: white; /* Texto blanco */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+button:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
+/*Estilos para el resultado de la planificación */
+#resultado {
+    margin-top: 20px; /* Espaciado superior */
+    background-color: #fff; /* Fondo blanco para el resultado */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#tabla-planificacion {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+#tabla-planificacion th, #tabla-planificacion td {
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+#tabla-planificacion th {
+    background-color: #f2f2f2; /* Fondo gris claro para encabezados */
+    font-weight: bold; /* Negrita para encabezados */
+}
+
+#tabla-planificacion tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo alternativo para filas */
+}
+
+#costo-total {
+    font-weight: bold; /* Negrita para el costo total */
+    margin-top: 10px; /* Espaciado superior */
+}
