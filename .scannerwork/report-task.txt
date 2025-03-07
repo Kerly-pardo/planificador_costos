@@ -1,0 +1,6 @@
+projectKey=planificador_costos
+serverUrl=http://localhost:9004
+serverVersion=25.2.0.102705
+dashboardUrl=http://localhost:9004/dashboard?id=planificador_costos
+ceTaskId=4bb27cde-6409-4b6f-be75-4d4994d957fa
+ceTaskUrl=http://localhost:9004/api/ce/task?id=4bb27cde-6409-4b6f-be75-4d4994d957fa
