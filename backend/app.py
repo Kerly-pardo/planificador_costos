@@ -16,6 +16,10 @@ def planificar():
         if not presupuesto or not tareas:
             return jsonify({"error": "Faltan datos en la solicitud."}), 400
 
+        # Validar tipos de datos
+        if not isinstance(presupuesto, int) or not all(isinstance(t['costo'], int) and isinstance(t['duracion'], int) for t in tareas):
+            return jsonify({"error": "Datos inválidos."}), 400
+
         planificador = Planificacion(presupuesto)
         for tarea in tareas:
             planificador.agregar_tarea(tarea['nombre'], tarea['duracion'], tarea['costo'])
